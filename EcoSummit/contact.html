@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width", intial-scale="1">
+  <title>Earth Ignite</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="/Images/Transparent Logo.png">
+  <script src="https://kit.fontawesome.com/4082d2dfb2.js" crossorigin="anonymous"></script>
+  <script defer src="app.js"></script>
+  <style>   
+    .wrapingimage  
+    {  
+    float: left;     
+    }   
+    </style>
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+  $.ajax({
+      url:'https://api.apispreadsheets.com/data/1551/',
+      type:'post',
+      data:$("#myForm").serializeArray(),
+      success: function(){
+        alert("Form Data Submitted :)")
+      },
+      error: function(){
+        alert("There was an error :(")
+      }
+  });
+}
+</script>
+</head>
+<body>
+    <section class = "header">
+        <nav>
+            <a href="index.html"><img class="LOGO" src="Images/Transparent Logo.png"></a>
+            <div class="nav-links" id="sidemenu">
+                <i class="fa-solid fa-xmark" onclick="closeSideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                      <button class="dropbtn">ABOUT</button> 
+                      <div class="dropdown-content"> 
+                        <a href="sec.html">SECRETARIAT</a>  
+                        <a href="eb.html">COMMITTEES</a>
+                        </div>
+                    <li><a href="https://drive.google.com/drive/folders/1bdskoe5Rvyey_0R8llE_qLlICQ3Bzcu4?usp=sharing" target="_blank">RESOURCES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                        </li>
+                      </div> 
+                    </div>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openSideMenu()"></i>
+        </nav>
+        <div class="TextBox">
+          <h1>Want to contact us?</h1>
+          <p>Scroll down</p>
+      </div>
+    </section>
+    <section class="location">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.891683639293!2d55.3127682753832!3d25.2405729776831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d2d27eabe83%3A0x6b21715f5940ebe0!2sThe%20Indian%20High%20School!5e0!3m2!1sen!2sae!4v1699358107786!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    </section>
+    
+    <section class="contact-us">
+      
+      <div class="row">
+
+        <div class="contact-col">
+
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>The Indian High School</h5>
+              <p>Oud Metha, Dubai</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+              <h5>earthignite2023@gmail.com</h5>
+              <p>Email us for anything else you want to know!</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-instagram"></i>
+            <span>
+              <h5>@earthignite2023</h5>
+              <p>Follow us on instagram!</p>
+            </span>
+          </div>
+        </div>
+
+
+</section>
+<div class="copyright">
+  <p><img src="Images/Logo small.png"><br>Designed by your favourite tech support Hishaam Basheer</p>
+</div>
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+
+</script>
+
+<script>
+      function openSideMenu() {
+          document.getElementById("sidemenu").style.display = "block";
+          document.getElementById("main").style.marginLeft = "60%";
+      }
+      
+      function closeSideMenu() {
+          document.getElementById("sidemenu").style.display = "none";
+          document.getElementById("main").style.marginLeft = "-20%";
+      }
+  </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

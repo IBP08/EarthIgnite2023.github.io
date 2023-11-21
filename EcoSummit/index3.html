@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width", intial-scale="1">
+  <title>Earth Ignite</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="/Images/Transparent Logo.png">
+  <script src="https://kit.fontawesome.com/4082d2dfb2.js" crossorigin="anonymous"></script>
+  <script defer src="app.js"></script>
+  <style>   
+    .wrapingimage  
+    {  
+    float: left;     
+    }   
+    </style>  
+</head>
+<body>
+    <section class = "header">
+        <nav>
+            <a href="index.html"><img class="LOGO" src="Images/Transparent Logo.png"></a>
+            <div class="nav-links" id="sidemenu">
+                <i class="fa-solid fa-xmark" onclick="closeSideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li class="dropdown">
+                      <a href="#">About</a>
+                    <ul class="dropdown-content">
+                      <li><a href="#">Secretariat</a></li>
+                      <li><a href="#">Committees</a></li>
+                    </ul></li>
+                    <li><a href="">IPC Page</a></li>
+                    <li><a href="">Resources</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openSideMenu()"></i>
+        </nav>
+    <div class="TextBox">
+        <h1>EARTH <span>IGNITE 2023</span></h1>
+        <p>Powering  Progress towards a  Sustainable and Innovative Future
+        </p>
+    </div>
+    </section>
+
+<!--------overview--------->
+
+    <section class="overview">
+      <h1>What is Earth Ignite?</h1>
+      <p>
+         sample text sample text
+      </p>
+</section>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link")
+      document.getElementById(tabname).classList.add("active-tab")
+    }
+  
+  </script>
+  
+  <script>
+        function openSideMenu() {
+            document.getElementById("sidemenu").style.width = "60%";
+            document.getElementById("main").style.marginLeft = "60%";
+        }
+        
+        function closeSideMenu() {
+            document.getElementById("sidemenu").style.width = "0";
+            document.getElementById("main").style.marginLeft = "-20%";
+        }
+    </script>
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

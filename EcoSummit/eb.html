@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width", intial-scale="1">
+  <title>Earth Ignite</title>
+  <link rel="stylesheet" href="eb.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="/Images/Transparent Logo.png">
+  <script src="https://kit.fontawesome.com/4082d2dfb2.js" crossorigin="anonymous"></script>
+  <script defer src="app.js"></script>
+  <style>   
+    .wrapingimage  
+    {  
+    float: left;     
+    }   
+    </style>  
+</head>
+<body>
+    <section class = "header">
+        <nav>
+            <a href="index.html"><img class="LOGO" src="Images/Transparent Logo.png"></a>
+            <div class="nav-links" id="sidemenu">
+                <i class="fa-solid fa-xmark" onclick="closeSideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                      <button class="dropbtn">ABOUT</button> 
+                      <div class="dropdown-content"> 
+                        <a href="sec.html">SECRETARIAT</a>  
+                        <a href="eb.html">COMMITTEES</a>
+                        </div>
+                    <li><a href="https://drive.google.com/drive/folders/1bdskoe5Rvyey_0R8llE_qLlICQ3Bzcu4?usp=sharing" target="_blank">RESOURCES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                        </li>
+                      </div> 
+                    </div>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openSideMenu()"></i>
+        </nav>
+        <div id ="committees">
+          <div class = "container">
+            <h1 class="sub-title">The Committees</h1>
+            <div class="work-list">
+              
+              <div class="work">
+                <img src="Images/UNSC.png">
+                <div class="layer">
+                  <h3>UNSC</h3>
+                  <p>
+                    Agenda:Establishing the Global Eco-Sovereignty Accord with Special Emphasis on Eco-Terrorism and Risk Mitigation Among Nations
+                <p>
+                  <div class="popup" onclick="myFunction()">The Chairs
+                  <span class="popuptext1" id="myPopup"><img src="Images/UNSC CHAIRS.png"></span>
+                </div>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="Images/DISEC.png">
+                <div class="layer">
+                  <h3>GA1</h3>
+                  <p>
+                    Agenda:Addressing the Use of Environmental Destruction as a tactic in Armed Conflict
+                    <p>
+                  <div class="popup" onclick="myFunction()">The Chairs
+                  <span class="popuptext1" id="myPopup"><img src="Images/GA1 CHAIRS.png"></span>
+                </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="work-list">
+              
+              <div class="work">
+                <img src="Images/ECOJR.png">
+                <div class="layer">
+                  <h3>ECOSOC JR</h3>
+                  <p>
+                    Agenda:Reviewing and Enhancing the NDCs of Countries to Align with More Ambitious Climate Goals in line with the Paris Agreement's Temperature Goals
+                  </p>
+                  <div class="popup" onclick="myFunction()">The Chairs
+                  <span class="popuptext1" id="myPopup"><img src="Images/ECOSOC JR CHAIRS.png"></span>
+                </div>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="Images/CC.png">
+                <div class="layer">
+                  <h3>Crisis Committee</h3>
+                  <p>
+                    Agenda:Amazon Forest Fires - Classified
+                <p>
+                  <div class="popup" onclick="myFunction()">The Chairs
+                  <span class="popuptext1" id="myPopup"><img src="Images/CC CHAIRS.png"></span>
+                </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="work-list">
+              
+              <div class="work">
+                <img src="Images/COP28.png">
+                <div class="layer">
+                  <h3>COP 28</h3>
+                  <p>
+                    Agenda:Highlighting the Role of Indigenous Communities in Environmental Conservation and their Rights to Protect their Territories 
+                <p>
+                  <div class="popup" onclick="myFunction()">The Chairs
+                  <span class="popuptext1" id="myPopup"><img src="Images/COP28 CHAIRS.png"></span>
+                </div>
+                </div>
+              </div>
+              
+              <div class="work">
+                <img src="Images/G20.png">
+                <div class="layer">
+                  <h3>G20</h3>
+                  <p>
+                    Agenda:Exploring the Provision of Financial and Technological Support from Developed to Developing Nations in Combating Climate Change
+                <p>
+                  <div class="popup" onclick="myFunction()">The Chairs
+                  <span class="popuptext1" id="myPopup"><img src="Images/G20 CHAIRS.png"></span>
+                </div>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+</section>
+        <div class="copyright">
+          <p><img src="Images/Logo small.png"><br>Designed by your favourite tech support Hishaam Basheer</p>
+          </div>
+          <script>
+          
+              var tablinks = document.getElementsByClassName("tab-links");
+              var tabcontents = document.getElementsByClassName("tab-contents");
+              function opentab(tabname){
+                for(tablink of tablinks){
+                  tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                  tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab")
+              }
+            
+            </script>
+            
+            <script>
+              function openSideMenu() {
+                  document.getElementById("sidemenu").style.display = "block";
+                  document.getElementById("main").style.marginLeft = "60%";
+              }
+              
+              function closeSideMenu() {
+                  document.getElementById("sidemenu").style.display = "none";
+                  document.getElementById("main").style.marginLeft = "-20%";
+              }
+          </script>
+        
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            
+            <script>
+              AOS.init();
+            </script>
+            <script>
+              // When the user clicks on <div>, open the popup
+              function myFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+              }
+              </script>
+          </body>
+          </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width", intial-scale="1">
+  <title>Earth Ignite</title>
+  <link rel="stylesheet" href="ipc.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="/Images/Transparent Logo.png">
+  <script src="https://kit.fontawesome.com/4082d2dfb2.js" crossorigin="anonymous"></script>
+  <script defer src="app.js"></script>
+  <style>   
+    .wrapingimage  
+    {  
+    float: left;     
+    }   
+    </style>  
+</head>
+<body>
+    <section class = "header">
+        <nav>
+            <a href="index.html"><img class="LOGO" src="Images/Transparent Logo.png"></a>
+            <div class="nav-links" id="sidemenu">
+                <i class="fa-solid fa-xmark" onclick="closeSideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                      <button class="dropbtn">ABOUT</button> 
+                      <div class="dropdown-content"> 
+                        <a href="sec.html">SECRETARIAT</a>  
+                        <a href="eb.html">COMMITTEES</a>
+                        </div>
+Images                    <li><a href="https://drive.google.com/drive/folders/1bdskoe5Rvyey_0R8llE_qLlICQ3Bzcu4?usp=sharing" target="_blank">RESOURCES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                        </li>
+                      </div> 
+                    </div>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openSideMenu()"></i>
+        </nav>
+        <div class="TextBox">
+          <h1>LOCKED UNTIL CONFERENCE</h1>
+      </div>
+</section>
+        <div class="copyright">
+          <p><img src="Images/Logo small.png"><br>Designed by your favourite tech support Hishaam Basheer</p>
+        </div>
+          <script>
+          
+              var tablinks = document.getElementsByClassName("tab-links");
+              var tabcontents = document.getElementsByClassName("tab-contents");
+              function opentab(tabname){
+                for(tablink of tablinks){
+                  tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                  tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab")
+              }
+            
+            </script>
+            
+            <script>
+                  function openSideMenu() {
+                      document.getElementById("sidemenu").style.width = "60%";
+                      document.getElementById("main").style.marginLeft = "60%";
+                  }
+                  
+                  function closeSideMenu() {
+                      document.getElementById("sidemenu").style.width = "0";
+                      document.getElementById("main").style.marginLeft = "-20%";
+                  }
+              </script>
+            
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            
+            <script>
+              AOS.init();
+            </script>
+          </body>
+          </html>
